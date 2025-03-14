@@ -1,92 +1,92 @@
 # Pet Shop Manager
 
-Um sistema simples de gerenciamento de pet shop desenvolvido com Laravel, Vue.js e Tailwind CSS.
+A simple pet shop management system developed with Laravel, Vue.js, and Tailwind CSS.
 
-## Funcionalidades
+## Features
 
-- Gerenciamento de pets (cadastro, edição, listagem e exclusão)
-- Gerenciamento de serviços (cadastro, edição, listagem e exclusão)
-- Agendamento de serviços (marcação, edição, listagem e cancelamento)
-- Dashboard com visão geral dos dados
+- Pet management (registration, editing, listing, and deletion)
+- Service management (registration, editing, listing, and deletion)
+- Service scheduling (booking, editing, listing, and cancellation)
+- Dashboard with an overview of the data
 
-## Requisitos
+## Requirements
 
-- PHP 8.1 ou superior
+- PHP 8.1 or higher
 - Composer
-- Node.js e NPM
-- MySQL ou outro banco de dados compatível
+- Node.js and NPM
+- MySQL or another compatible database
 
-## Instalação
+## Installation
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone <url-do-repositorio>
+git clone <repository-url>
 cd pet-shop-manager
 ```
 
-2. Instale as dependências do PHP:
+2. Install PHP dependencies:
 ```bash
 composer install
 ```
 
-3. Instale as dependências do JavaScript:
+3. Install JavaScript dependencies:
 ```bash
 npm install
 ```
 
-4. Copie o arquivo de ambiente e configure-o:
+4. Copy the environment file and configure it:
 ```bash
 cp .env.example .env
 ```
 
-5. Configure o arquivo `.env` com suas credenciais de banco de dados.
+5. Configure the `.env` file with your database credentials.
 
-6. Gere a chave da aplicação:
+6. Generate the application key:
 ```bash
 php artisan key:generate
 ```
 
-7. Execute as migrações para criar as tabelas no banco de dados:
+7. Run the migrations to create the tables in the database:
 ```bash
 php artisan migrate
 ```
 
-8. (Opcional) Execute os seeders para popular o banco de dados com dados de exemplo:
+8. (Optional) Run the seeders to populate the database with sample data:
 ```bash
 php artisan db:seed
 ```
 
-## Executando o projeto
+## Running the Project
 
-1. Inicie o servidor de desenvolvimento do Laravel:
+1. Start the Laravel development server:
 ```bash
 php artisan serve
 ```
 
-2. Em outro terminal, compile os assets e inicie o servidor de desenvolvimento do Vite:
+2. In another terminal, compile the assets and start the Vite development server:
 ```bash
 npm run dev
 ```
 
-3. Acesse a aplicação em [http://localhost:8000](http://localhost:8000)
+3. Access the application at [http://localhost:8000](http://localhost:8000)
 
-## Estrutura do Projeto
+## Project Structure
 
-- `app/Models` - Modelos do Eloquent
-- `app/Http/Controllers/Api` - Controladores da API
-- `database/migrations` - Migrações do banco de dados
-- `resources/js/components` - Componentes Vue.js
-- `routes/api.php` - Rotas da API
-- `routes/web.php` - Rotas web
+- `app/Models` - Eloquent Models
+- `app/Http/Controllers/Api` - API Controllers
+- `database/migrations` - Database Migrations
+- `resources/js/components` - Vue.js Components
+- `routes/api.php` - API Routes
+- `routes/web.php` - Web Routes
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - **Backend**: Laravel 10
 - **Frontend**: Vue.js 3
 - **CSS**: Tailwind CSS
-- **Banco de Dados**: MySQL
-- **Ferramentas de Build**: Vite
+- **Database**: MySQL
+- **Build Tools**: Vite
 
-## Licença
+## License
 
-Este projeto está licenciado sob a licença MIT.
+This project is licensed under the MIT license.
